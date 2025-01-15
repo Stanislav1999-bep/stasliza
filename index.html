@@ -1,37 +1,38 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Приглашение на свадьбу</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свадебное приглашение</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Дорогой гость!</h1>
-    <p>Мы приглашаем вас на нашу свадьбу Стаса и Лизы, которая состоится [дата] в [место].</p>
-    <form id="wedding-form">
-      <label for="name">Ваше имя:</label>
-      <input type="text" id="name" name="name" required>
+    <div class="container">
+        <h1>Дорогой гость!</h1>
+        <p>Мы с радостью приглашаем вас на нашу свадьбу!</p>
+        <h2>Стас и Лиза</h2>
+        <p>Дата: <strong>15 июня 2025</strong></p>
+        <p>Место: <strong>Ресторан "Вдохновение", г. Самара</strong></p>
+        <hr>
+        <form action="#" method="post">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" required>
 
-      <label for="guests">Вы придёте:</label>
-      <select id="guests" name="guests">
-        <option value="один">Один/одна</option>
-        <option value="с парой">С парой</option>
-      </select>
+            <label for="guests">Вы будете:</label>
+            <select id="guests" name="guests">
+                <option value="alone">Один/одна</option>
+                <option value="with-partner">С парой</option>
+                <option value="with-friends">С друзьями</option>
+            </select>
 
-      <label for="alcohol">Предпочитаемый алкоголь:</label>
-      <select id="alcohol" name="alcohol">
-        <option value="вино">Вино</option>
-        <option value="водка">Водка</option>
-        <option value="коньяк">Коньяк</option>
-        <option value="без алкоголя">Без алкоголя</option>
-      </select>
+            <label for="alcohol">Ваш любимый алкоголь:</label>
+            <input type="text" id="alcohol" name="alcohol">
 
-      <button type="submit">Отправить</button>
-    </form>
-    <p id="thank-you" style="display:none;">Спасибо за ответ!</p>
-  </div>
-  <script src="script.js"></script>
+            <label for="comments">Комментарии:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
 </body>
 </html>
