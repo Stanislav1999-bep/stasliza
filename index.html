@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Приглашение на свадьбу</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Дорогой гость!</h1>
+    <p>Мы приглашаем вас на нашу свадьбу Стаса и Лизы, которая состоится [дата] в [место].</p>
+    <form id="wedding-form">
+      <label for="name">Ваше имя:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="guests">Вы придёте:</label>
+      <select id="guests" name="guests">
+        <option value="один">Один/одна</option>
+        <option value="с парой">С парой</option>
+      </select>
+
+      <label for="alcohol">Предпочитаемый алкоголь:</label>
+      <select id="alcohol" name="alcohol">
+        <option value="вино">Вино</option>
+        <option value="водка">Водка</option>
+        <option value="коньяк">Коньяк</option>
+        <option value="без алкоголя">Без алкоголя</option>
+      </select>
+
+      <button type="submit">Отправить</button>
+    </form>
+    <p id="thank-you" style="display:none;">Спасибо за ответ!</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
