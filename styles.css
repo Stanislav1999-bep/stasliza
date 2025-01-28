@@ -1,12 +1,9 @@
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  font-family: 'Inter', sans-serif;
 }
-
 .container {
     width: 90%;
     max-width: 600px;
@@ -87,4 +84,12 @@ button {
 footer {
     margin-top: 30px;
     font-weight: bold;
+}
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  margin: 20px;
 }
