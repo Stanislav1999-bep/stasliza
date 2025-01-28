@@ -1,38 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Свадебное приглашение</title>
+    <title>Свадьба Стаса и Лизы</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h1>Дорогой гость!</h1>
-        <p>Мы с радостью приглашаем вас на нашу свадьбу!</p>
-        <h2>Стас и Лиза</h2>
-        <p>Дата: <strong>15 июня 2025</strong></p>
-        <p>Место: <strong>Ресторан "Вдохновение", г. Самара</strong></p>
-        <hr>
-        <form action="#" method="post">
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" name="name" required>
+        <div class="header">
+            <div class="date">
+                <span>21</span>
+                <span>09</span>
+                <span>24</span>
+            </div>
+            <div class="names">
+                <h1>Свадьба <br> Стаса & Лизы</h1>
+            </div>
+        </div>
 
-            <label for="guests">Вы будете:</label>
-            <select id="guests" name="guests">
-                <option value="alone">Один/одна</option>
-                <option value="with-partner">С парой</option>
-                <option value="with-friends">С друзьями</option>
-            </select>
+        <section class="invitation">
+            <p>Дорогие друзья и родители! <br>
+            Со счастьем и нежностью в сердце, мы рады пригласить вас на наш праздник!</p>
+        </section>
 
-            <label for="alcohol">Ваш любимый алкоголь:</label>
-            <input type="text" id="alcohol" name="alcohol">
+        <section class="photo">
+            <img src="photo.jpg" alt="Фото пары">
+        </section>
 
-            <label for="comments">Комментарии:</label>
-            <textarea id="comments" name="comments" rows="4"></textarea>
+        <section class="location">
+            <h2>Локация</h2>
+            <p><b>G Terrace</b> <br> Лесная ул., 23, Самара</p>
+            <button>Схема проезда</button>
+        </section>
 
-            <button type="submit">Отправить</button>
-        </form>
+        <section class="dress-code">
+            <h2>Dress Code</h2>
+            <p>Мы будем счастливы, если вы подберёте цветовую гамму под стиль мероприятия:</p>
+            <div class="color-palette">
+                <div class="color-box dark-green"></div>
+                <div class="color-box black"></div>
+                <div class="color-box white"></div>
+            </div>
+        </section>
+
+        <section class="details">
+            <h2>The Details</h2>
+            <p>Просим не дарить цветы. Вместо них можно принести корм для собак. Все подарки будут отправлены в приют.</p>
+        </section>
+
+        <section class="telegram">
+            <h2>Telegram</h2>
+            <p>Все новости и фото будут в нашем чате.</p>
+            <button>Чат гостей</button>
+        </section>
+
+        <footer>
+            <p>Мы будем ждать вас!</p>
+        </footer>
     </div>
 </body>
 </html>
